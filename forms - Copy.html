@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+    </head>
+    <body>
+        <form name="Registration form" action="#" method="POST">
+            <label for="lang">choose a language:</label><br>
+            <select id="lang" name="lang">
+                <option value="pls select">please select</option>
+                <option value="tel" selected>telugu</option>
+                <option value="hin">hindi</option>
+            </select><br>
+
+            <label for="comments">comments:</label><br>
+            <textarea name="comments" rows="10" cols="10">this is a comment</textarea><br>
+
+            <p>choose u r checkbox:</p>
+            <input type="checkbox" id="language" name="language" value="telugu">
+            <label for="language"> I speak telugu</label> 
+            <input type="checkbox" id="language" name="language" value="english">
+            <label for="language"> I speak english</label> 
+            <input type="checkbox" id="language" name="language" value="tamil" checked>
+            <label for="language"> I speak tamil</label> <br>
+
+            <p>choose u r radio:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label><br><br>
+
+            <h1>TODAY class</h1>
+
+            <label for="fbcolour">colour:</label><br>
+            <input type="color" id="fbcolour" name="fbcolour"><br><br>
+
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="file">file:</label><br>
+            <input type="file" id="file" name="file"><br><br>
+
+            <label for="num">number:</label><br>
+            <input type="number" id="num" name="num" min="0" max="10"><br><br>
+
+            <label for="date">date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <input type="submit" value="submit">
+            <input type="submit" value="rest">
+
+        </form>
+    </body>
+</html>

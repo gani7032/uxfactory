@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css postions</title>
+       <style>
+           body{
+               min-height: 1000px;
+               min-width: 300px;
+               background-color: chartreuse;
+           }
+           #sticky{
+            background-color: crimson;
+            padding: 10px;
+            border: 2px solid black;
+            position: sticky;
+            top:10px;
+            text-align: center;
+        }
+        .static{
+            background-color: blue;
+            padding: 10px;
+            border: 2px dotted black;
+            position: static;
+            top: 25px;
+            left: 40px;
+        }
+        #relative{
+            background-color: blueviolet;
+            padding: 10px;
+            border: 2px solid black;
+            position: relative;
+            left: 40px;
+        }
+        .fixed{
+            background-color: blue;
+            padding: 10px;
+            position: fixed;
+            border: 2px solid black ;
+            bottom: 10px;
+            right: 60px;
+        }
+       
+        #parent{
+            background-color: darkgreen;
+            padding: 10px;
+            border: 2px solid black;
+            position: relative;
+            height: 100px;
+            width: 200px;
+        }
+        #child{
+            background-color: deepskyblue;
+            padding: 10px;
+            border: 2px solid black;
+            position: absolute;
+            
+            
+        }
+       </style>
+    </head>
+    <body>
+        <div id="sticky">this is sticky</div>
+        <div class="static">
+            this is static
+        </div>
+        <div id="relative">this is RELATIVE</div>
+        <div class="fixed">this is fixed</div>
+        <div id="parent">this is parent element
+            <div id="child">this is child element</div>
+        </div>
+    </body>
+</html>

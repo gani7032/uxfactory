@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>alt selector</title>
+    <style>
+        /*
+        a[target]{
+            background-color: aqua;
+        }*/
+        a[target="_blank"]{
+            background-color: blue;
+        }
+        [title~="flower"]{
+            border: 5px solid red;
+        }
+        [class|=gani]{
+            background-color: sienna;
+        }
+        [class^="top"]{
+            background-color: springgreen;
+        }
+        [class$="gani"]{
+            background-color: violet;
+        }
+        [class*="ga"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+   <a href="http:// www.ace2three.com" target="-blank">ace2three</a>
+   <a href="http:// www.google.com" target="-blank">google</a>
+   <img src="http://thewowstyle.com/wp-content/uploads/2015/01/1280_1024_nature_scene_wallpaper_1600FG100_029.jpg" title="sunflower" width=100px" height="100px">
+   <img src="http://thewowstyle.com/wp-content/uploads/2015/01/1280_1024_nature_scene_wallpaper_1600FG100_029.jpg"title="flower" width=100px" height="100px">
+   <p class="gani">ganesh</p>
+   <p class="gani_varma">ganesh varma</p>
+   <p class="ganivarma">ganesh varma repalle</p>
+   <p class="top_header">header</p>
+   <p class="top_text">text</p>
+   <p class="topheader">topheader</p>
+   <p class="f-gani">first</p>
+   <p class="s_gani">second</p>
+   <p class="t">third</p>
+   <p class="f_gani">firdt</p>
+   <p class="second">second</p>
+   <p class="t_ganesh">third</p>
+</body>
+
+</html>
